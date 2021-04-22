@@ -25,10 +25,12 @@ function ContinuousRP(ts1, ts2)
     rvRP = abs(wr)/sum(wgh)
     sdRP = sqrt(2*(1-rvRP))
 
-    Dict("meanRP" => meanRP,
-        "rvRP" => rvRP,
-        "sdRP" => sdRP,
-        "pRP" => pRP)
+    (meanRP = meanRP, rvRP = rvRP, sdRP = sdRP, pRP = pRP)
+
+    # Dict("meanRP" => meanRP,
+    #     "rvRP" => rvRP,
+    #     "sdRP" => sdRP,
+    #     "pRP" => pRP)
 
 
 end
